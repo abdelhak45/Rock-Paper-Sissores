@@ -1,0 +1,75 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="icon" href="http://127.0.0.1:5503/rock%20paper%20sissores/icon.png">
+    <title> Rock Paper Sissores </title>
+</head>
+
+<body>
+
+    <h3 id="winer" class="title m-2">
+        Wining By 3 Points
+    </h3>
+
+    <div class="parent">
+        <div class="you" style="padding-bottom: 20px;">
+            <h2 id="user" style="text-align: center;padding: 10px; font-weight: 600; color: white;">You </h2>
+            <img id="imgOfYourChose" style="width: 90%;text-align: center; border-radius: 5px; "
+                src="/rock paper sissores/user.1.png" alt="">
+            <h2
+                style="text-align: center; padding-top: 20px;font-weight: 600; color: rgb(21, 173, 233);font-size: 30px;">
+                Point :
+                <span id="userPoint" style="color: rgb(28, 156, 96);">0</span>
+            </h2>
+
+        </div>
+
+        <div class="Cumputer" style="padding-bottom: 20px;">
+            <h2 style="text-align: center;padding: 10px; font-weight: 600; color: white;">Robot </h2>
+            <img style="width: 90%;text-align: center; border-radius: 5px; " id="imgOfCumputerChose"
+                src="rock paper sissores/robot character.jpg" alt="">
+            <h2
+                style="text-align: center; padding-top: 20px; font-weight: 600; color: rgb(21, 173, 233);font-size: 30px;">
+                Point :
+                <span id="cumputerPoint" style="color: rgb(28, 156, 96);">0</span>
+            </h2>
+
+        </div>
+
+    </div>
+    <div class="parent2">
+
+        <div class="yourChose">
+            <img src="/rock paper sissores/peper.jpg" loading="lazy" width="60" alt="">
+            <img src="/rock paper sissores/sessors.jpg" loading="lazy" width="60" alt="">
+            <img src="/rock paper sissores/rock-1.jpg" loading="lazy" width="60" alt="">
+        </div>
+
+        <div style="display: flex;justify-content: space-evenly; align-items: center;">
+            <button style="text-align: center;width: 80%;margin-top: 10px; font-weight: 500; color: black;"
+                class="btn btn-primary p-2 " onclick="comparesionBtn()">
+                Conparison
+            </button>
+            <button class="btn btn-dark mt-2" style=" font-size: 20px;" onclick="choseAgain()">
+                <i class="fa-solid fa-rotate"></i>
+            </button>
+        </div>
+
+    </div>
+
+</body>
+<script src="main.js"></script>
+
+</html>
